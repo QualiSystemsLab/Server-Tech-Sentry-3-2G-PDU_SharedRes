@@ -1,0 +1,13 @@
+<Driver Description="Describe the purpose of your CloudShell shell" MainClass="driver.SentryPduDriver" Name="SentryPduDriver" Version="1.0.0">
+    <Layout>
+        <Command Name="CallPowerOn" DisplayName="CallPowerOn" Tags="remote_powerMng,allow_shared" Description=" Call Power On device">
+        </Command>
+         <Command Name="CallPowerOff" DisplayName="CallPowerOff" Tags="remote_powerMng,allow_shared" Description=" Call Power Off device">
+        </Command>
+        <Command Name="CallPowerCycle" DisplayName="CallPowerCycle" Tags="remote_powerMng,allow_shared" Description=" Call Power Cycle device">
+            <Parameters>
+                <Parameter Name="delay" DisplayName="Delay" Type="String" Mandatory="False" DefaultValue="0"/>
+            </Parameters>
+        </Command>
+    </Layout>
+</Driver>
